@@ -20,14 +20,14 @@ def sum_pair(input, k):
 
 
 input = [10, 15, 3, 7]
-print(sum_pair(input, 17)) # should be true
-print(sum_pair(input, 12)) # should be false
-print(sum_pair(input, 1))  # should be false
-print(sum_pair([], 200))   # should be false
-print(sum_pair(input, -2)) # should be false
+assert sum_pair(input, 17) # should be true
+assert not sum_pair(input, 12) # should be false
+assert not sum_pair(input, 1)  # should be false
+assert not sum_pair([], 200)   # should be false
+assert not sum_pair(input, -2) # should be false
 
 input = [-1, -2, 4, 10, 3]
-print(sum_pair(input, 2))  # should be true
-print(sum_pair(input, 13)) # should be true
-print(sum_pair(input, 13)) # should be true
-print(sum_pair(input, -3)) # should be true
+assert sum_pair(input, 2)  # should be true
+assert sum_pair(input, 13) # should be true
+assert sum_pair(input, 13) # should be true
+assert sum_pair(input, -3) # should be true
