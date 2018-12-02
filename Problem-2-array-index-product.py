@@ -43,9 +43,9 @@ def index_product_without_division(arr):
 
 
 arr = [1, 2, 3, 4, 5]
-print(index_product(arr))
-print(index_product_without_division(arr))
+assert index_product(arr) == [120, 60, 40, 30, 24]
+assert index_product_without_division(arr) == [120, 60, 40, 30, 24]
 
 arr = [3, 2, 1]
-print(index_product(arr))
-print(index_product_without_division(arr))
+assert index_product(arr) == [2, 3, 6]
+assert index_product_without_division(arr) == [2, 3, 6]
