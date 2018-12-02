@@ -19,13 +19,14 @@ def find_smallest_and_largest(arr):
     smallest = arr[0]
     largest = arr[0]
     for element in arr:
-        if element < smallest:
+        # smallest should be positive integer
+        if element < smallest and element > 0:
             smallest = element
         if element > largest:
             largest = element
     return smallest, largest
 
 input = [3, 4, -1, 1]
-print(find_missing(input))
+assert find_missing(input) == 2
 input = [1, 2, 0]
-print(find_missing(input))
+assert find_missing(input) == 3
